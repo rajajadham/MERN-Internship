@@ -1,0 +1,234 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Responsive Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Description -->
+    <meta name="description" content="Personal About Me webpage of Raja Jadham">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Raja Jadham, About Me, Web Developer, HTML, CSS, JavaScript">
+
+    <meta name="author" content="Raja Jadham">
+
+    <title>About Me | Raja Jadham</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        main {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #2563eb;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #2563eb;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 25px;
+        }
+
+        li {
+            margin: 8px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            margin-top: 18px;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>About Me</h1>
+        <p>Welcome to my personal webpage</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Profile Section -->
+        <section class="profile">
+            <img src="raja.jpeg" alt="Photo of Raja Jadham">
+
+            <h2>Raja Jadham</h2>
+
+            <p>
+                Hello! My name is Raja Jadham. I am a BCA student
+                interested in web development and programming.
+                I enjoy creating websites and learning new
+                technologies.
+            </p>
+        </section>
+
+        <!-- Hobbies and Skills -->
+        <section>
+            <h2>My Hobbies & Skills</h2>
+
+            <ul>
+                <li>Web Development</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Programming in C and C++</li>
+                <li>Listening to Music</li>
+                <li>Learning New Technologies</li>
+            </ul>
+        </section>
+
+        <!-- Contact Form -->
+        <section>
+            <h2>Contact Me</h2>
+
+            <form>
+
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Raja Jadham | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+```
