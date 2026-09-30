@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Day 4 - JavaScript Functions and DOM">
+    <meta name="author" content="Raja Jadham">
+
+    <title>Day 4 | JavaScript Functions</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>JavaScript Functions</h1>
+        <p>Day 4 - Functions & DOM Manipulation</p>
+    </header>
+
+    <main>
+
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h2 id="welcomeMessage">Welcome!</h2>
+            <p id="nameText"></p>
+        </section>
+
+        <!-- Rectangle Area -->
+        <section>
+            <h2>Rectangle Area</h2>
+
+            <p>
+                The area of a rectangle is calculated using:
+                <strong>Length × Width</strong>
+            </p>
+
+            <button onclick="showRectangleArea()">
+                Calculate Area
+            </button>
+
+            <p id="areaResult"></p>
+        </section>
+
+        <!-- Voter Eligibility -->
+        <section>
+            <h2>Voter Eligibility</h2>
+
+            <p>Enter your age to check your voting eligibility.</p>
+
+            <input
+                type="number"
+                id="ageInput"
+                placeholder="Enter your age"
+            >
+
+            <button onclick="checkVoter()">
+                Check Eligibility
+            </button>
+
+            <p id="voterResult"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Raja Jadham | Day 4</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
