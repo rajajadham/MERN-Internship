@@ -1,0 +1,162 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #d1d5db;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* Sections */
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   TASK 1 - FLEXBOX
+========================= */
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.flex-box {
+    flex: 1;
+    padding: 25px;
+    background-color: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+}
+
+.flex-box h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TASK 2 - CSS GRID
+========================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.gallery-item {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #dbeafe;
+    border-radius: 12px;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e40af;
+}
+
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 768px) {
+
+    .flex-container {
+        flex-direction: row;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+}
