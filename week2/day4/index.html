@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Day 4 | User Directory</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Random User Directory</h1>
+        <p>Fetch real user data from an external API</p>
+    </header>
+
+    <main>
+
+        <!-- Task 1 -->
+        <section class="single-user-section">
+
+            <h2>Random User Card</h2>
+
+            <div id="singleUser" class="single-user-card">
+                <p>Loading user...</p>
+            </div>
+
+            <button id="newUserBtn">
+                Fetch New User
+            </button>
+
+        </section>
+
+
+        <!-- Task 2 / Mini Challenge -->
+        <section class="directory-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>User Directory</h2>
+                    <p>5 random users from the API</p>
+                </div>
+
+                <button id="refreshBtn">
+                    Refresh Users
+                </button>
+            </div>
+
+            <div id="usersGrid" class="users-grid">
+                <p>Loading users...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
