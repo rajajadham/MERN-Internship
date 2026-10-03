@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #111827;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #111827;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    min-height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.tag {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 85px);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    display: block;
+}
+
+.hero > p:not(.tag) {
+    max-width: 600px;
+    color: #6b7280;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    width: fit-content;
+    padding: 13px 25px;
+
+    background: #111827;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+}
+
+.section-title {
+    margin-bottom: 35px;
+}
+
+.section-title p {
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 42px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.project-card {
+    background: white;
+    padding: 30px;
+
+    border-radius: 15px;
+
+    min-height: 260px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-7px);
+}
+
+.project-card span {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.project-card h3 {
+    margin: 18px 0 12px;
+    font-size: 23px;
+}
+
+.project-card p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    margin-top: auto;
+
+    color: #111827;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.featured {
+    border: 2px solid #111827;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 100px auto;
+
+    padding: 45px;
+
+    background: #111827;
+    color: white;
+
+    border-radius: 18px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.about h2 {
+    font-size: 38px;
+}
+
+.about p:last-child {
+    color: #d1d5db;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+    padding: 30px;
+
+    background: #111827;
+    color: #d1d5db;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 70vh;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 30px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+}
