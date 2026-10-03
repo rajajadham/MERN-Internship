@@ -51,4 +51,51 @@ weather-app/
 Root par:
 
 ```bash
-cd ~/Desktop/"MERN inetrn"
+cd ~/Desktop/"MERN inetrn"# 🌤️ API Weather App
+
+A responsive weather application built using HTML, CSS and JavaScript.  
+The application fetches live weather data from the OpenWeatherMap API and displays weather information based on the searched city.
+
+## ✨ Features
+
+- 🔍 Search weather by city name
+- 🌍 Live weather data
+- 🌡️ Temperature in Celsius
+- ☁️ Weather condition
+- 🖼️ Weather icon
+- 💧 Humidity
+- 💨 Wind speed
+- 🌡️ Feels-like temperature
+- ⏳ Loading animation
+- ⚠️ Error handling
+- 📱 Responsive design
+- 🎨 Weather-based background
+- 🌐 OpenWeatherMap API integration
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript ES6+
+- Fetch API
+- Async/Await
+- OpenWeatherMap API
+
+## 🌐 API Source
+
+This project uses the OpenWeatherMap API to fetch live weather information.
+
+OpenWeatherMap API:
+
+https://openweathermap.org/api
+
+## 📁 Project Structure
+
+```text
+MERN inetrn/
+└── week2/
+    └── day6-7/
+        ├── index.html
+        ├── style.css
+        ├── script.js
+        └── README.md
