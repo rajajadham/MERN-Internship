@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+.app.light {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.app.dark {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.navbar {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar.light {
+  background-color: #f1f1f1;
+  color: #222222;
+}
+
+.navbar.dark {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.navbar button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.content {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.theme-card {
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.app.light .theme-card {
+  background-color: #f1f1f1;
+}
+
+.app.dark .theme-card {
+  background-color: #333333;
+}
